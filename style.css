@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: sans-serif; 
+}
+header {
+    background-color: #0a0a0a; /*fundo da logo*/
+    display: flex;   /*MOVER OS LINS PARA CIMA*/
+    align-items:center;/*Deixar a logo na horizontal ou seja em uma linha igual */
+    justify-content: space-between; /*afastar para o canto os links de navegação para canto superior direito*/
+}
+
+header ul li + li {
+    margin-left: 24px;
+
+}
+
+header ul {
+    list-style: none; /*remover as bolinhas no lins FILME, IMAGENS e PERSONAGENS */
+    display: flex;
+}
+
+header img {
+    width: 180px; /*tamanho da imagem da logo*/
+}
+
+header a {
+    color: white; /*cor dos links */
+    text-decoration: none;
+    transition: color 0.2s; /*determinar 2 segundos quando o mause passar por cima dos links */
+}
+
+header a:hover{
+    color: rgb(252, 245, 245);
+}
+
+.hero {
+    background-image: url(./banner.jpg);
+    background-size: cover; /*ajustar a Imagem do banner*/
+    background-position: center top;
+    height: 320px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /*Deixar o titulo do projeto ao centro*/
+    align-items: center; /*colocar o titulo do prejeto mais abaixo
+    para centralizar os span 123 */
+
+}
+
+.hero h1 {
+    color: white;
+    font-size: 36px; /**/
+}
+
+.dots {
+    margin-top: 24px;
+    display: flex;
+}
+
+.dots span {
+    display: inline-block; /*Mudar os dos span pela bolinha*/
+    background-color: #faf2f2; /*cor das bolinhas de navegação*/
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    cursor: pointer; /*colocar a mão de navegação entre as bolinhas span e os links de filmes e +*/
+    
+}
+
+.dots span + span {
+    margin-left: 8px; /*espaço entre as bolinhas 16px*/
+}
+
+header a:hover {
+    color: #f13239; /*colocar cor nos links de navegação*/
+}
+
+.dots .active {
+    background-color: #cf1010;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 64px auto 0; /*separ imagem da galeria do da logo*/
+    padding: 0 24px; /*centralizar a nossa galeria*/
+    background-color: white; /*cor de fundo imagem galeria*/
+}
+
+.gallery h2 {
+    margin-bottom: 32px;
+    padding-left: 8px;
+    border-left: 4px solid #cf1010;
+}
+
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;/*quebra de imagem*/
+    gap: 24px; /*separar as fotos da galeria de imagem*/
+}
+
+.gallery-row div {
+    
+    flex: 1 1 280px;
+}
+
+.gallery-row img {
+    width: 100%; /*tamanho de imagem */
+    border-radius: 8px; /*adicionar borda nas imagem*/
+    margin-bottom: 16px; /*afastar o titulo legenda da imagem da galeria*/
+
+}
+.gallery p {
+    font-weight: bold; /*colocar bolda nos titulos legenda*/
+
+}
+
+
+.history h2 {
+    margin-bottom: 32px;
+    padding-left: 8px;
+    border-left: 4px solid #f13239;
+}
+
+.history p {
+    line-height: 1.5;
+}
+
+.history p + p {
+    margin-top: 24px;
+}
+.history {
+    margin: 64px 0 0;
+    padding: 92px 24px;
+  
+
+    background-color: #111111;
+    color: rgb(231, 229, 229);
+    border-top: 4px solid #f13239;
+    flex-wrap: wrap;
+
+  
+
+}
+
+
+.history .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-bottom: 2px solid #f13239;
+
+}
+
+.history .container .col {
+    flex: 1 1 200px;
+
+
+}
+.history img {
+    width: 100%;
+    display: block;
+}
+
+.history .container .col img {
+    width: 100%;
+
+}
+
+.history a {
+    color: #f13239;
+}
+
+.history a {
+    color: #f13239;
+    transition: color 0.2s;
+}
+
+footer {
+    padding: 64px 24px;
+    background: #111111;
+    color: #ebebeb;
+    text-align: center;
+}
+
+
+footer a {
+    color: #f13239;
+}
+
+footer a {
+    color: #f13239;
+    transition: color 0.3s;
+    
+
+}
+
+footer a:hover {
+    color: #ebebeb;
+}
